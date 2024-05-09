@@ -1,2 +1,38 @@
 Hello world
 How are yoadau?
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Delight</title>
+  <style>
+    /* Define keyframes for animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+    /* Style the title */
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      color: #2ecc71; /* Green color */
+      animation: bounce 2s infinite; /* Apply animation */
+    }
+  </style>
+</head>
+<body>
+  <div class="title">DevOps Delight: Unleash Efficiency with the Latest in Script Editing!</div>
+</body>
+</html>
