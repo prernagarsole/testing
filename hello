@@ -8,10 +8,19 @@ How are yoadau?
 </div>
 
 <style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
-    text-align: center;
+    z-index: -1; /* Place the header behind the content */
+    overflow: hidden; /* Hide any overflow to prevent horizontal scrolling */
 }
 
 #header img {
@@ -21,6 +30,7 @@ How are yoadau?
     object-fit: cover; /* Ensure the image covers the entire header */
 }
 </style>
+
 
 
 
