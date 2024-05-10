@@ -8,18 +8,19 @@ How are yoadau?
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Application Build and Deploy Team</title>
+<title>Image Gallery</title>
 </head>
 <body>
 
-<img src="/sites/YourSiteName/YourDocumentLibrary/YourImage.jpg" alt="Application Build and Deploy Team Header Image" style="width: 100%; height: auto;">
-
-<img src="/sites/YourSiteName/YourDocumentLibrary/YourSecondImage.jpg" alt="Second Image" style="width: 100%; height: auto;">
-
-<!-- Your SharePoint page content goes here -->
+<div>
+    <img src="/sites/YourSiteName/YourDocumentLibrary/YourFirstImage.jpg" alt="First Image" style="width: 50%; height: auto; float: left; margin-right: 10px;">
+    <img src="/sites/YourSiteName/YourDocumentLibrary/YourSecondImage.jpg" alt="Second Image" style="width: 50%; height: auto; float: left;">
+    <div style="clear: both;"></div> <!-- Clear float -->
+</div>
 
 </body>
 </html>
+
 
 ===
 
