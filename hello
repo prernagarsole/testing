@@ -11,61 +11,16 @@ How are yoadau?
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to Navy Federal Credit Union</title>
-<style>
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#banner {
-    width: 100%;
-    height: 400px; /* Set the height of the banner as needed */
-    background-image: url('/sites/YourSiteName/YourDocumentLibrary/YourImage.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: #fff;
-    padding: 100px 0; /* Adjust top and bottom padding as needed */
-    box-sizing: border-box;
-    overflow: hidden; /* Prevent any overflow */
-    position: relative; /* Ensure relative positioning */
-}
-
-#banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
-    position: absolute; /* Position the image absolutely */
-    top: 0;
-    left: 0;
-    z-index: -1; /* Place the image behind the text */
-}
-
-#banner h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-#banner p {
-    font-size: 18px;
-}
-</style>
+<title>Application Build and Deploy Team</title>
 </head>
 <body>
 
-<div id="banner">
-    <img src="/sites/YourSiteName/YourDocumentLibrary/YourImage.jpg" alt="Banner Image">
-    <h1>Welcome to Navy Federal Credit Union</h1>
-    <p>Some additional text or description can go here...</p>
-</div>
+<img src="/sites/YourSiteName/YourDocumentLibrary/YourImage.jpg" alt="Application Build and Deploy Team Header Image" style="width: 100vw; height: auto;">
 
 <!-- Your SharePoint page content goes here -->
 
 </body>
 </html>
-
-
 
 
 
