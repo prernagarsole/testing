@@ -2,6 +2,26 @@ Hello world
 How are yoadau?
 
 
+
+<div id="header">
+    <img src="/sites/YourSiteName/YourDocumentLibrary/YourImage.jpg" alt="Header Image">
+</div>
+
+<style>
+#header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#header img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
