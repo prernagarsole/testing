@@ -12,14 +12,16 @@ How are yoadau?
     width: 100%;
     height: auto;
     text-align: center;
-    margin-bottom: 20px; /* Adjust as needed */
 }
 
 #header img {
-    max-width: 100%;
+    width: 100vw; /* Set the width to the full viewport width */
     height: auto;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the entire header */
 }
 </style>
+
 
 
 <!DOCTYPE html>
