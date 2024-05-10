@@ -3,6 +3,25 @@ How are yoadau?
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Build and Deploy Team</title>
+</head>
+<body>
+
+<img src="/sites/YourSiteName/YourDocumentLibrary/YourImage.jpg" alt="Application Build and Deploy Team Header Image" style="width: 100%; height: auto;">
+
+<img src="/sites/YourSiteName/YourDocumentLibrary/YourSecondImage.jpg" alt="Second Image" style="width: 100%; height: auto;">
+
+<!-- Your SharePoint page content goes here -->
+
+</body>
+</html>
+
+===
 
 
 
