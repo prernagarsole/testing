@@ -1,89 +1,26 @@
-Automate, manage, and monitor support processes effortlessly with our dedicated DevOps team. Streamline operations, enhance efficiency, and ensure seamless collaboration across the development lifecycle
+#  Merge sorted array == m and n, list1, list2 --
+=== save in nums1 list and return None
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Team SharePoint Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #0072C6;
-            color: white;
-        }
-        .nav {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #f2f2f2;
-        }
-        .nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0072C6;
-            font-weight: bold;
-        }
-        .content {
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .content-item {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .content-item h2 {
-            margin-top: 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Welcome to DevOps Team SharePoint Site</h1>
-    </div>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Documentation</a>
-        <a href="#">Tools</a>
-        <a href="#">Contact</a>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="content-item">
-                <h2>About Us</h2>
-                <p>Welcome to the DevOps Team SharePoint Site! We are a group of dedicated professionals focused on streamlining development and operations processes.</p>
-            </div>
-            <div class="content-item">
-                <h2>Latest Projects</h2>
-                <ul>
-                    <li><a href="#">Project A</a></li>
-                    <li><a href="#">Project B</a></li>
-                    <li><a href="#">Project C</a></li>
-                </ul>
-            </div>
-            <div class="content-item">
-                <h2>Useful Tools</h2>
-                <ul>
-                    <li><a href="#">Version Control System</a></li>
-                    <li><a href="#">Continuous Integration Server</a></li>
-                    <li><a href="#">Deployment Automation</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        i = m - 1
+        j = n - 1
+        k = m + n - 1
+        while i >= 0 and j >= 0:
+            if nums1[i] > nums2[j]:
+                nums1[k] = nums1[i]
+                i -= 1
+            else:
+                nums1[k] = nums2[j]
+                j -= 1  
+            k -= 1
+        
+        while j >= 0:
+            nums1[k] = nums2[j]
+            j -= 1  
+            k -= 1
+
+
+
+
+
