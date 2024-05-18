@@ -1,7 +1,7 @@
   
 # Merge sorted array == m and n, list1, list2 -- 
 ## save in nums1 list and return None
-
+**-----NOTE==== return sorted list in nums1===**
 
 
 class Solution:
