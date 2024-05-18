@@ -31,6 +31,9 @@ class Solution:
 **bold**  Merege 2 array sorted ==
 nums1,nums2,n,m ===taken in merged
 
+**-----NOTE==== return sorted list in mereged new list===**====normal merge of 2 sorted lists 
+
+
 def function(nums1,nums2,n,m):
     merged = []
     i = 0 
@@ -63,6 +66,8 @@ function(nums1,nums2,n,m)
 ============
 
 #To merge two unsorted lists into a single sorted list
+
+**-----NOTE==== The list is sorted ======return sorted list in mereged new list===**====normal merge of 2 sorted lists 
 
 def merge_sorted_lists(mylist, mylist1):
     # Sort both lists first
