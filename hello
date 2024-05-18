@@ -1,4 +1,4 @@
-#  Merge sorted array == m and n, list1, list2 --
+**bold**   Merge sorted array == m and n, list1, list2 --
 === save in nums1 list and return None
 
 class Solution:
@@ -25,7 +25,7 @@ class Solution:
 
 
 ======
-# Merege 2 array sorted ==
+**bold**  Merege 2 array sorted ==
 nums1,nums2,n,m ===taken in merged
 
 def function(nums1,nums2,n,m):
@@ -59,7 +59,7 @@ function(nums1,nums2,n,m)
 
 ============
 
-#Sort
+**bold** Sort
 
 SOrt
 
