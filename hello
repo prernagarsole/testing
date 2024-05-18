@@ -62,10 +62,74 @@ function(nums1,nums2,n,m)
 
 ============
 
-**bold** Sort
+#To merge two unsorted lists into a single sorted list
 
-SOrt
+def merge_sorted_lists(mylist, mylist1):
+    # Sort both lists first
+    mylist.sort()
+    mylist1.sort()
+
+    merged = []
+    i = j = 0
+    length = len(mylist)
+    length1 = len(mylist1)
+
+    # Merge the lists while both have elements left
+    while i < length and j < length1:
+        if mylist[i] < mylist1[j]:
+            merged.append(mylist[i])
+            i += 1
+        else:
+            merged.append(mylist1[j])
+            j += 1
+
+    # If there are remaining elements in mylist, add them
+    while i < length:
+        merged.append(mylist[i])
+        i += 1
+
+    # If there are remaining elements in mylist1, add them
+    while j < length1:
+        merged.append(mylist1[j])
+        j += 1
+
+    print(merged)
+
+mylist = [4, 5, 1, 2, 4]
+mylist1 = [3, 4]
+merge_sorted_lists(mylist, mylist1)
+
+
+
+
+
+===========
+
+# Sort using soort function
 
 my_list = [4, 5, 1, 2, 4]
 sorted_list = sorted(my_list)
 print(sorted_list)
+
+
+
+=======
+
+# Normal sort
+
+
+def function(mylist):
+      length = len(mylist)
+    Flag = True
+    while Flag:
+        Flag = False
+        for i in range(length - 1):
+            if mylist[i] > mylist[i+1]:
+                mylist[i],mylist[i+1] = mylist[i+1],mylist[i]
+                Flag = True
+        print(mylist)    
+       
+        
+mylist = [4, 5, 1, 2, 4]
+
+function(mylist)
