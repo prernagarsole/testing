@@ -265,3 +265,25 @@ def removechar(string1,string2):
 string1 = "Geeks123For123Geeks"
 string2 = "abcdefgh"
 removechar(string1,string2)
+'''Python – Uppercase Half String
+Last Updated : 08 May, 2023
+Given a String, perform uppercase of the later part of the string.
+
+Input : test_str = 'geeksforgeek' 
+Output : geeksfORGEEK 
+Explanation : Latter half of string is uppercased. '''
+
+#=============================
+
+def uppercase_string(string1):
+    string1half = string1[:-5]
+    print(string1half)
+    split = string1[8:]
+    print(split)
+    result = split.upper()
+    print(result)
+    c = string1half,result
+    return "".join(c)
+
+string1 = "geeksforgeeks"
+print(uppercase_string(string1))
