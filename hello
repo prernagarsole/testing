@@ -212,3 +212,32 @@ def matching1(string11,string2):
 string11 = 'abcdef'
 string2 = 'defghia'
 print(matching1(string11, string2))
+
+
+====
+'''Python – Avoid Spaces in string length
+Last Updated : 16 May, 2023
+Given a String, compute all the characters, except spaces.
+
+Input : test_str = ‘geeksforgeeks 33 best’ 
+Output : 19 
+Explanation : Total characters are 19. 
+
+Input : test_str = ‘geeksforgeeks best’ 
+Output : 17 
+Explanation : Total characters are 17 except spaces.'''
+
+#=============================
+
+def string_length_withoutspace(string1, string2):
+    string1 = string1.replace(" ", "")
+    print(string1)
+    string2 = "".join(char for char in string2 if char.isalnum())
+    print(string2)
+    return (len(string1),len(string2))
+     
+
+string1 = "I D  ad;"
+# below string has special character
+string2 = "geeksforg.       eeks best’"
+print(string_length_withoutspace(string1,string2))
