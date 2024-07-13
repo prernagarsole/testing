@@ -241,3 +241,27 @@ string1 = "I D  ad;"
 # below string has special character
 string2 = "geeksforg.       eeks best’"
 print(string_length_withoutspace(string1,string2))
+
+
+======
+#===============================================
+
+'''How to Remove Letters From a String in Python
+Last Updated : 28 Aug, 2023
+Strings are data types used to represent text/characters. In this article, we present different methods for the problem of removing the ith character from a string and talk about possible solutions that can be employed in achieving them using Python.
+
+Input: 'Geeks123For123Geeks'
+Output: GeeksForGeeks
+Explanation: In This, we have removed the '123' character from a string'''
+
+#=============================
+
+def removechar(string1,string2):
+    string1 = string1.replace('123','')
+    string2 = string2[3:-3]
+    print(string1)
+    print(string2)
+
+string1 = "Geeks123For123Geeks"
+string2 = "abcdefgh"
+removechar(string1,string2)
