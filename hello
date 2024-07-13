@@ -177,3 +177,38 @@ def reversestr(list1):
 
 list1 = ["Helloname","bbb b","c v vv"]
 reversestr(list1)
+
+
+==================
+
+Count the Number of matching characters in a pair of string
+
+2 types
+
+def matching(str1,str2):
+    count = 0
+    for i in range(len(str1)):
+        if str1[i] in str2:
+             count += 1
+
+            
+    return count
+
+str1 = 'aabcddekll12@'
+str2 = 'bb2211@55k'
+print(matching(str1,str2))
+
+
+
+def matching1(string11,string2):
+    setvar = set()
+    for i in range(len(string11)):
+        if string11[i] in string2:
+            setvar.add(string11[i])
+    print(setvar, len(setvar))
+    return setvar
+
+
+string11 = 'abcdef'
+string2 = 'defghia'
+print(matching1(string11, string2))
