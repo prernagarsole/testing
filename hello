@@ -287,3 +287,25 @@ def uppercase_string(string1):
 
 string1 = "geeksforgeeks"
 print(uppercase_string(string1))
+===================================================
+
+
+import re
+from typing import Counter
+
+def list_new(listvalues):
+    dict1 = {}
+    for i in listvalues:
+        result = i.upper()
+        result = result.replace(" ","")
+        print(result)
+ 
+        if result in dict1:
+            dict1[result] += 1
+        else:
+            dict1[result] = 1
+    return(dict1)
+
+
+listvalues = ["A man a plan a canal: Panama", "race a car", "race a car"]
+print(list_new(listvalues))
