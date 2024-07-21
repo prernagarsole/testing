@@ -426,3 +426,83 @@ def rotate1(arr, index):
 arr = [3,4,5,6,7,7,8]
 index = 3
 print(rotate1(arr, index))
+
+
+
+=============================================
+
+'''
+Exercise 1A: Create a string made of the first, middle and last character
+Write a program to create a new string made of an input string’s first, middle, and last character.
+
+Given:
+
+str1 = "James"
+Expected Output:
+
+Jms
+'''
+
+def say_hello():
+    str = "james"
+    l = 0
+    r = len(str) -1 
+    mid = (l+r) //2
+    w = str[l] + str[mid] + str[r]
+    print(w)
+print(say_hello())
+
+
+
+'''
+Exercise 1B: Create a string made of the middle three characters
+Write a program to create a new string made of the middle three characters of an input string.
+
+Given:
+
+Case 1
+
+str1 = "JhonDipPeta"
+Output
+
+Dip
+Case 2
+
+str2 = "JaSonAy"
+Output
+
+Son
+'''
+def say_hello():
+    str1 = "JhonrrrDipPeta"
+    r = len(str1) 
+    print(r)
+    mid = r // 2
+    print(mid)
+    check = str1[mid - 1: mid + 2]
+    print(check)
+print(say_hello())
+
+'''
+Exercise 2: Append new string in the middle of a given string
+Given two strings, s1 and s2. Write a program to create a new string s3 by appending s2 in the middle of s1.
+
+Given:
+
+s1 = "Ault"
+s2 = "Kelly"
+Expected Output:
+
+AuKellylt
+'''
+
+def stringappend(s1,s2):
+
+    mid = int(len(s1) / 2)
+    c = s1[:mid] + s2 + s1[mid:]
+    return c
+
+
+s1 = "Ault"
+s2 = "Kelly"
+print(stringappend(s1,s2))
