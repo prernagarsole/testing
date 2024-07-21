@@ -506,3 +506,83 @@ def stringappend(s1,s2):
 s1 = "Ault"
 s2 = "Kelly"
 print(stringappend(s1,s2))
+
+
+'''
+
+Exercise 3: Create a new string made of the first, middle, and last characters of each input string
+
+Given two strings, s1 and s2, write a program to return a new string made of s1 and s2’s first, middle, and last characters.
+
+Given:
+
+s1 = "America"
+s2 = "Japan"
+Expected Output:
+
+AJrpan
+
+'''
+
+def stringappend(s1,s2):
+
+    l = l1 = 0
+    r = len(s1) - 1
+    r1 = len(s2) - 1
+    mid = (l + r) // 2
+    mid1 = (l1 + r1) // 2
+    s3 = s1[l] +s2[l1]+s1[mid] +s2[mid1]+s1[r] +s2[r1]
+    return s3
+s1 = "America"
+s2 = "Japan"
+print(stringappend(s1,s2))
+
+
+'''
+
+Exercise 4: Arrange string characters such that lowercase letters should come first
+Given string contains a combination of the lower and upper case letters. Write a program to arrange the characters of a string so that all lowercase letters should come first.
+
+Given:
+
+str1 = PyNaTive
+Expected Output:
+
+yaivePNT
+
+'''
+
+def stringappend(str1):
+    s2 = []
+    for char in str1:
+        if char.islower():
+            s2.append(char)
+    c = "".join(s2)
+    for char in str1:
+        if char.isupper():
+            s2.append(char)
+    c = "".join(s2)
+    return c
+str1 = "PyNaTive"
+print(stringappend(str1))
+
+
+
+
+
+
+
+'''
+
+Exercise 5: Count all letters, digits, and special symbols from a given string
+Given:
+
+str1 = "P@#yn26at^&i5ve"
+Expected Outcome:
+
+Total counts of chars, digits, and symbols 
+
+Chars = 8 
+Digits = 3 
+Symbol = 4
+'''
