@@ -735,3 +735,33 @@ s = "Emma is a data scientist who knows Python. Emma works at google."
 find1= "Emma"
 print(func(s,find1))
 
+====
+
+Exercise 14: Remove empty strings from a list of strings
+Given:
+
+str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+Expected Output:
+
+
+Original list of sting
+['Emma', 'Jon', '', 'Kelly', None, 'Eric', '']
+
+After removing empty strings
+['Emma', 'Jon', 'Kelly', 'Eric']
+
+
+def func(list1):
+    s1 =[]
+    for s in list1:
+        if s:
+            s = s.replace(" ", "")
+        if s:
+            s1.append(s)
+    return s1
+
+
+list1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+print(func(list1))
+
+
