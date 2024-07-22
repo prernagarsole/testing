@@ -676,3 +676,39 @@ k = "USA"
 print(func(str1, k))
 
 
+=====
+
+
+'''
+Exercise 9: Calculate the sum and average of the digits present in a string
+Given a string s1, write a program to return the sum and average of the digits that appear in the string, ignoring all other characters.
+
+Given:
+
+str1 = "PYnative29@#8496"
+Expected Outcome:
+
+Sum is: 38 Average is  6.333333333333333
+'''
+print("-----------")
+def func(str1):
+    avg1 = 0
+    count1 = 0
+    sum1 = 0
+    for i in str1:
+        if i.isdigit():
+            count1 += 1
+            sum1 += int(i)
+    avg1 = sum1 / count1        
+    print(count1)
+    print(sum1)
+    print(avg1)
+
+
+
+str1 = "PYnative29@#8496"
+print(func(str1))
+
+
+
+
