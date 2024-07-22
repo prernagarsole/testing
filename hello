@@ -829,3 +829,30 @@ def func(str1):
 
 str1 = 'I am 25 years and 10 months old'
 print(func(str1))
+
+
+=======
+
+
+Exercise 17: Find words with both alphabets and numbers
+Write a program to find words with both alphabets and numbers from an input string.
+
+Given:
+
+str1 = "Emma25 is Data scientist50 and AI Expert"
+Expected Output:
+
+Emma25
+scientist50
+
+def func(str1):
+    s = []
+    str1 = str1.split()
+    
+    for word in str1:
+        if any(char.isdigit() for char in word) and any(char.isalpha() for char in word):
+            s.append(word)
+    return "\n".join(s)
+str1 = "Emma25 is Data scientist50 and AI Expert"
+print(func(str1))
+
