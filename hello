@@ -789,3 +789,20 @@ def func(list1):
 list1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
 print(func(list1))
 
+======================
+Exercise 15: Remove special symbols / punctuation from a string
+Given:
+
+str1 = "/*Jon is @developer & musician"
+Expected Output:
+
+"Jon is developer musician"
+
+answer--
+
+def func(str1):
+
+    c = "".join(char if char.isalnum() or char.isspace() else '' for char in str1)
+    return c
+str1 = "/*Jon is @developer & musician"
+print(func(str1))
