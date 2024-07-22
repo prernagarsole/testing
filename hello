@@ -572,9 +572,7 @@ print(stringappend(str1))
 
 
 
-'''
-
-Exercise 5: Count all letters, digits, and special symbols from a given string
+'''Exercise 5: Count all letters, digits, and special symbols from a given string
 Given:
 
 str1 = "P@#yn26at^&i5ve"
@@ -584,5 +582,27 @@ Total counts of chars, digits, and symbols
 
 Chars = 8 
 Digits = 3 
-Symbol = 4
-'''
+Symbol = 4'''
+
+
+def func(str1):
+    countdigit = 0
+    countchar = 0
+    countsym = 0
+    for char in str1:
+        if char.isdigit():
+            countdigit += 1
+        elif char.isalpha():
+            countchar += 1
+        else:
+            countsym += 1
+    c = "".join(char for char in str1 if char.isalpha())   
+    print(len(c))  
+    print(c)   
+        
+    print("Digits =",countdigit)
+    print("Chars =",countchar)
+    print("Symbol =",countsym)
+
+str1 = "P@#yn26at^&i5ve"   
+func(str1)
