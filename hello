@@ -764,4 +764,28 @@ def func(list1):
 list1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
 print(func(list1))
 
+====
+
+def func(list1):
+    s1 =[]
+    dict1 = {}
+    for s in list1:
+        if s:
+            s = s.replace(" ", "")
+            s = s.lower()
+        if s:
+            s1.append(s)
+    
+    print(s1)
+    
+
+    for i in s1:
+        if i in dict1:
+            dict1[i] += 1
+        else:
+            dict1[i] = 1
+    return dict1
+
+list1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+print(func(list1))
 
