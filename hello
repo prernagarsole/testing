@@ -709,6 +709,7 @@ def func(str1):
 str1 = "PYnative29@#8496"
 print(func(str1))
 
+===
 
-
+10 and 11 from here ==https://pynative.com/python-string-exercise/
 
