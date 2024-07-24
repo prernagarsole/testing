@@ -856,3 +856,58 @@ def func(str1):
 str1 = "Emma25 is Data scientist50 and AI Expert"
 print(func(str1))
 
+=========================================================================================================================================================================================================
+https://pynative.com/python-list-exercise-with-solutions/ --list 1,2,3,4
+
+
+
+
+
+def say_hello(list1):
+    list1 = list1[::-1]
+    return list1
+
+list1 = [100, 200, 300, 400, 500]
+print(say_hello(list1))
+
+
+
+print("=======================")
+
+
+def say_hello(list1, list2):
+    list3 =[]
+    list3 =[i + j for i, j in zip(list1,list2)]
+    return list3
+
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly"]
+print(say_hello(list1, list2))
+
+print("=======================")
+
+def say_hello(list1):
+    for i, n in enumerate(list1):
+        sum = n * n
+        list1[i] = sum
+    return list1
+
+list1 =[1, 2, 3, 4, 5, 6, 7]
+print(say_hello(list1))
+
+print("=======================")
+
+
+def say_hello(list1, list2):
+    ''' list3 = []
+    for i in list1:
+        for j in list2:
+            print(i,j)
+    return list3'''
+    list3 = [i + j for i in list1 for j in list2]
+    return list3
+
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+print(say_hello(list1, list2))
+
