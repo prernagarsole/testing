@@ -28,8 +28,6 @@ def say_hello(nums1, nums2):
         j -= 1
         k -= 1
     return result
-
-
 nums1 = [2,4,5]
 nums2 = [5,5,6]
 print(say_hello(nums1, nums2))
